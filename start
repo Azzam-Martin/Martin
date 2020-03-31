@@ -1,0 +1,17 @@
+THIS_DIR=$(cd $(dirname $0); pwd)
+cd $THIS_DIR
+install() {
+echo -e ""
+echo -e "" 
+echo -e "" 
+}
+if [ "$1" = "install" ]; then
+install
+else
+if [ ! -f ./tg ]; then
+echo "" 
+echo ""
+exit 1
+fi
+./tg -s Martin.lua
+fi
